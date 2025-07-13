@@ -1,0 +1,157 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D4F6CC;  
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: #0e1131;  
+    color: white;
+    height: 30vh; 
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center; 
+    position: relative; 
+    width: 100%;  
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Center Text Section */
+.text-section {
+    text-align: center;
+    margin-left: 10px;  
+    margin-right: 10px;
+    margin-top: 5px;  
+}
+
+.text-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #EF5B0C;  
+}
+
+.text-section p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #3CCF4E;  
+}
+
+/* Strip for "Meet the TaskForce" */
+.meet-strip {
+    background-color: #EF5B0C;  
+    padding: 10px 15px;  
+    color: white;
+    margin-top: 10px;  
+}
+
+.meet-strip h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* TaskForce container to hold all taskforce blocks */
+.taskforce-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* TaskForce block styling */
+.taskforce-block {
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* TaskForce Card Styling (ID Card Look) */
+.taskforce-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid #003865;
+}
+
+.taskforce-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.taskforce-card h3 {
+    font-size: 1.3em;
+    color: #003865;
+    margin: 5px 0;
+}
+
+.taskforce-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Hover effect for TaskForce card */
+.taskforce-card:hover {
+    transform: scale(1.05);  
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #003865;
+    color: white;
+}
+
+.taskforce-card:hover p {
+    color: white;
+}
+
+/* Responsive Design - Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    .taskforce-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .taskforce-block {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .text-section h1 {
+        font-size: 2em; 
+    }
+
+    .text-section p {
+        font-size: 1em; 
+    }
+
+    .meet-strip h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .taskforce-block {
+        width: 95%; 
+    }
+
+    .text-section h1 {
+        font-size: 1.8em;
+    }
+
+    .text-section p {
+        font-size: 0.9em;
+    }
+}
