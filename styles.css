@@ -154,6 +154,10 @@ header {
     color: white;
 }
 
+.taskforce-card:hover h3 {
+    color: #EF5B0C; /* Change name color to the theme color on hover */
+}
+
 /* Responsive Design - Adjust layout for smaller screens */
 @media (max-width: 768px) {
     header {
