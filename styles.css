@@ -162,11 +162,11 @@ header {
     transform: scale(1.05);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     background-color: #3CCF4E;  /* Green background on hover */
-    color: white;  /* Keep text white on hover */
+    color: black;  /* Keep text white on hover */
 }
 
 .taskforce-card:hover p {
-    color: white; /* Keep description text white */
+    color: black; /* Keep description text white */
 }
 
 .taskforce-card:hover h3 {
