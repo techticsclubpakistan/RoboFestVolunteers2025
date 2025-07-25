@@ -1,7 +1,7 @@
 /* General body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #D4F6CC;
+    background-color: #D4F6CC;  /* Light accent color for the body background */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -9,13 +9,13 @@ body {
 
 /* Navigation Bar Styling */
 .navbar {
-    background-color: #0e1131;
+    background-color: #0e1131;  /* Dark theme for the navbar */
     width: 100%;
     padding: 15px 0;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensure the navbar stays at the top */
+    z-index: 1000;
 }
 
 .navbar-list {
@@ -39,14 +39,14 @@ body {
 }
 
 .navbar-link:hover {
-    color: #EF5B0C;  /* Hover color */
+    color: #EF5B0C;  /* Orange Hover Color */
 }
 
 /* Header styling */
 header {
-    background-color: #0e1131;
+    background-color: #0e1131;  /* Dark theme for header */
     color: white;
-    height: 30vh;  /* Increased height */
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,32 +54,28 @@ header {
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding-top: 0; /* Extra space to account for fixed navbar */
 }
 
-/* Center Text Section */
 .text-section {
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
+    margin: 10px;
 }
 
 .text-section h1 {
     font-size: 2.5em;
     margin-bottom: 5px;
-    color: #EF5B0C;
+    color: #EF5B0C;  /* Theme Color for the title (Orange) */
 }
 
 .text-section p {
     font-size: 1.2em;
     margin: 5px 0;
-    color: #3CCF4E;
+    color: #3CCF4E;  /* Theme Color for subtext (Green) */
 }
 
-/* Strip for "Meet the TaskForce" */
 .meet-strip {
-    background-color: #EF5B0C;
+    background-color: #EF5B0C;  /* Theme Color (Orange) */
     padding: 10px 15px;
     color: white;
     margin-top: 10px;
@@ -101,7 +97,7 @@ header {
 /* Category Section Styling */
 .taskforce-category {
     width: 100%;
-    background-color: #003865; /* Dark background for each category */
+    background-color: #003865;  /* Dark background for each category */
     padding: 30px 0;
     color: white;
     margin-bottom: 30px;
@@ -127,13 +123,13 @@ header {
 
 /* TaskForce Card Styling (ID Card Look) */
 .taskforce-card {
-    background-color: #ffffff;
+    background-color: #ffffff;  /* White background by default */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     text-align: center;
-    border: 2px solid #003865;
+    border: 2px solid #003865;  /* Dark border */
     width: 100%;
 }
 
@@ -149,7 +145,7 @@ header {
 /* Name styling */
 .taskforce-card h3 {
     font-size: 1.4em;
-    color: #003865;
+    color: #003865;  /* Set name color to purple */
     font-weight: bold;
     margin: 10px 0;
 }
@@ -157,7 +153,7 @@ header {
 /* Details styling */
 .taskforce-card p {
     font-size: 1em;
-    color: #555;
+    color: black;  /* Set description text to black */
     margin: 5px 0;
 }
 
@@ -165,16 +161,16 @@ header {
 .taskforce-card:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    background-color: #003865;
-    color: white;
+    background-color: #3CCF4E;  /* Green background on hover */
+    color: white;  /* Keep text white on hover */
 }
 
 .taskforce-card:hover p {
-    color: white;
+    color: white; /* Keep description text white */
 }
 
 .taskforce-card:hover h3 {
-    color: #EF5B0C; /* Change name color to the theme color on hover */
+    color: #003865; /* Keep name color purple even on hover */
 }
 
 /* Responsive Design - Adjust layout for smaller screens */
@@ -189,7 +185,7 @@ header {
     }
 
     .taskforce-block {
-        width: 90%;
+        width: 90%; /* Makes each taskforce block take up more width on mobile */
         margin: 10px 0;
     }
 
@@ -212,7 +208,7 @@ header {
 
 @media (max-width: 480px) {
     .taskforce-block {
-        width: 95%;
+        width: 95%; /* Makes the taskforce blocks even bigger on very small screens */
     }
 
     .text-section h1 {
